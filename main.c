@@ -1,14 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "./header/ai.h"
-#include "./header/board.h"
-#include "./header/game_state.h"
-#include "./header/game.h"
-#include "./header/input.h"
-#include "./header/settings.h"
-#include "./header/terminal_colors.h"
-#include "./header/ui.h"
+#include "./header/tic-tac-toe.h"
 
 // Définition des Variables communes à tous les fichiers.
 
@@ -29,9 +22,9 @@ int main() {
     printf(BBLU " ┃      "BCYN"Jouer"BBLU"      ┃  ┃  "BCYN"Configuration"BBLU"  ┃  ┃   "BCYN"Explications"BBLU"   ┃\n");
     printf(BBLU " ┗━━━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━━━━┛\n");
     printf(BLU " >> Choix : " CRESET);
-
+    
     // Redirection vers l'option choisi
-    int option = read_integer_in_range(1, 3);
+    int option = read_integer_in_range(1,3);
     if (option == 1) {
         select_game_mode();
     } else if (option == 2) {
