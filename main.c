@@ -1,14 +1,17 @@
+#include <stdlib.h>
 #include <stdio.h>
 
+#include "./header/ai.h"
 #include "./header/board.h"
-#include "./header/game.h"
 #include "./header/game_state.h"
+#include "./header/game.h"
 #include "./header/input.h"
 #include "./header/settings.h"
 #include "./header/terminal_colors.h"
 #include "./header/ui.h"
 
 // Définition des Variables communes à tous les fichiers.
+
 const char *player_one_color = BGRN;
 const char *player_two_color = BRED;
 const int BOARD_SIZE = 3;
@@ -27,12 +30,15 @@ int main() {
     printf(BBLU " ┗━━━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━━━━┛\n");
     printf(BLU " >> Choix : " CRESET);
 
+    // Redirection vers l'option choisi
     int option = read_integer_in_range(1, 3);
     if (option == 1) {
-        play_two_player_game();
+        select_game_mode();
     } else if (option == 2) {
         configure_player_colors();
+        main();
     } else {
         display_explanations();
+        main();
     }
 }
