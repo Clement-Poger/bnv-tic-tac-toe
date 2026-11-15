@@ -92,10 +92,3 @@ tic-tac-toe/
 ├── Makefile           # Compilation du projet
 └── AIDE_EXTERIEURE.md # Références utilisées pendant le développement
 ```
-
-## Remarque
-
-Le plateau plein met fin à la partie. Le message d'égalité en mode deux joueurs
-mérite toutefois une vérification : le code de résultat ne traite pas encore
-cette valeur de fin de partie de la même façon que celle du mode contre
-l'ordinateur.

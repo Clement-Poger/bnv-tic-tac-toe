@@ -22,7 +22,7 @@ void play_two_player_game(void) {
     while (!win) {
         if (count_empty_cells() == 0) {
             win = !win;
-            is_win = 5;
+            is_win = 4;
             break;
         }
 
