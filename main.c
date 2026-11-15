@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #include "./header/board.h"
+#include "./header/game.h"
 #include "./header/game_state.h"
 #include "./header/input.h"
 #include "./header/settings.h"
@@ -28,9 +29,7 @@ int main() {
 
     int option = read_integer_in_range(1, 3);
     if (option == 1) {
-        game_board = create_board(BOARD_SIZE);
-        display_board(game_board);
-        destroy_board(game_board);
+        play_two_player_game();
     } else if (option == 2) {
         configure_player_colors();
     } else {
