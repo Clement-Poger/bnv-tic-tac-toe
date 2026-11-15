@@ -11,9 +11,7 @@ Le projet met en pratique plusieurs notions de programmation en C :
 - création, initialisation et libération dynamique d'un plateau ;
 - validation des saisies utilisateur ;
 - gestion de menus, de tours de jeu et de conditions de victoire ;
-- utilisation de fonctions, de variables partagées et de chaînes ;
-- recherche d'un coup par règles simples ou par l'algorithme Minimax ;
-- affichage coloré dans un terminal compatible avec les séquences ANSI.
+- utilisation de fonctions, de variables et de chaînes.
 
 ## Fonctionnalités
 
