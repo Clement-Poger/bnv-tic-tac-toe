@@ -1,8 +1,10 @@
 #include <stdio.h>
 
+#include "./header/board.h"
 #include "./header/game_state.h"
 #include "./header/input.h"
 #include "./header/terminal_colors.h"
+#include "./header/ui.h"
 
 // Définition des Variables communes à tous les fichiers.
 const char *player_one_color = BGRN;
@@ -23,4 +25,9 @@ int main() {
     printf(BBLU " ┗━━━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━━━━┛\n");
     printf(BLU " >> Choix : " CRESET);
     read_integer_in_range(1, 3);
+
+    // Création et affichage du plateau de jeu.
+    game_board = create_board(BOARD_SIZE);
+    display_board(game_board);
+    destroy_board(game_board);
 }
