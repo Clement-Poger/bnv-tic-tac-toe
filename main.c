@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 #include "./header/game_state.h"
+#include "./header/input.h"
 #include "./header/terminal_colors.h"
 
 // Définition des Variables communes à tous les fichiers.
@@ -21,4 +22,5 @@ int main() {
     printf(BBLU " ┃      "BCYN"Jouer"BBLU"      ┃  ┃  "BCYN"Configuration"BBLU"  ┃  ┃   "BCYN"Explications"BBLU"   ┃\n");
     printf(BBLU " ┗━━━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━━━┛  ┗━━━━━━━━━━━━━━━━━━┛\n");
     printf(BLU " >> Choix : " CRESET);
+    read_integer_in_range(1, 3);
 }
