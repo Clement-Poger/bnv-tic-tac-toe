@@ -1,6 +1,14 @@
 #include <stdio.h>
 
+#include "./header/game_state.h"
 #include "./header/terminal_colors.h"
+
+// Définition des Variables communes à tous les fichiers.
+const char *player_one_color = BGRN;
+const char *player_two_color = BRED;
+const int BOARD_SIZE = 3;
+char **game_board;
+int computer_difficulty = 1;
 
 int main() {
     // Affichage du Menu d'Accueil
